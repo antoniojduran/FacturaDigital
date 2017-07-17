@@ -1,0 +1,8 @@
+<?page title="Factura Digital" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="windPdfFactura"  border="none" apply="ve.com.corpoelec.facturadigital.controladores.PdfFactura">
+<div align="center">
+	<iframe id="reporte" width="100%" height="800px" visible="true" />
+</div>
+</window>
+</zk>

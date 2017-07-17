@@ -1,0 +1,53 @@
+<?page title="ListaFacturas" contentType="text/html;charset=UTF-8"?>
+<zk>
+<borderlayout id="windFacturas" apply="ve.com.corpoelec.facturadigital.controladores.ListaFacturas">
+<north>
+<image src="/imagenes/intranet factura digital-03.png"></image>
+</north>
+<west width="180px" border="normal"></west>
+<center>
+<div align="center">
+<vbox >
+<space></space>
+<div align="right">
+<image src="/imagenes/usuario.png"  /> 
+<space/><label id="lblusuario"/> |							
+<button id="btncerrar" label="Cerrar Sesión" />
+</div>
+<separator></separator>
+<div>
+	<label id="lblencabezado" value="FACTURAS" style="font-size : 12px ;font-weight : bolder;font-family : arial" />
+	<separator bar="true" width="900px"/>
+ </div>
+<div id="dvlista"  height="570px" width="auto" style="overflow:auto">						
+<listbox  id="listaFacturas"  mold="paging" pageSize="12" fixedLayout="true" pagingPosition="top" width="883px">
+							<listhead style="text-align : center">
+								<listheader style="font-size : 11px ;font-weight : bolder;font-family : arial" label="FACTURA" width="25%" sort="auto" tooltiptext="Ordenar por Serie" align="center"/>
+								<listheader style="font-size : 11px ;font-weight : bolder;font-family : arial" label="PERÍODO FACTURADO" width="20%" />
+								<listheader style="font-size : 11px ;font-weight : bolder;font-family : arial" label="EMISIÓN" width="10%" sort="auto" tooltiptext="Ordenar por Fecha de Emisión" />
+								<listheader style="font-size : 11px ;font-weight : bolder;font-family : arial" label="VENCIMIENTO"  width="10%" sort="auto" tooltiptext="Ordenar por Fecha de Vencimiento" />
+								<listheader style="font-size : 11px ;font-weight : bolder;font-family : arial" label="IMPORTE" width="10%"  />							
+							    <listheader style="font-size : 11px ;font-weight : bolder;font-family : arial" label="ACCIÓN" width="15%"  />
+							</listhead>
+</listbox>
+<div align="right">
+<separator/>
+<groupbox width="150px" >
+<checkbox  id="chkEnviarSeleccion" label="Enviar Selección"/>
+</groupbox>
+</div>  
+</div>
+<div id="dvmensaje" align="center" visible="false" >	
+<separator></separator>
+<separator></separator>							
+<div width="450px" align="center"><label style="font-size : 16px ;font-weight : bolder;font-family : arial;color : red"  multiline="true"  value="En este momento no tenemos acceso a la información, intente realizar su consulta más tarde." /></div>
+</div>		
+</vbox>
+</div>
+</center>
+<south>
+<div align="center" ><label value="CORPOELEC 2016" style="font-size : 14px ;font-weight : bolder;font-family : arial"/> </div>
+</south>
+</borderlayout>
+<script type="text/javascript" src="js/utilidades.js"></script>
+</zk>

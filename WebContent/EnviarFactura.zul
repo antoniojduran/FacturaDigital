@@ -1,0 +1,33 @@
+<?page title="Enviar Facturas" contentType="text/html;charset=UTF-8"?>
+<zk>
+<borderlayout id="windEnviarFactura" apply="ve.com.corpoelec.facturadigital.controladores.EnviarFactura">
+<north>
+<image src="/imagenes/intranet factura digital-03.png"></image>
+</north>
+<west width="180px" border="normal"></west>
+<center>
+<div align="center">
+<vbox>
+<space></space>
+<div align="right">	    
+	<image src="/imagenes/usuario.png"  />
+	<space/><label id="lblusuario"/> |							
+<button id="btncerrar" label="Cerrar Sesión"  />
+</div>
+<separator></separator>
+ <div>
+	<separator bar="true" width="900px"/>
+ </div>	
+ <separator></separator>
+<separator></separator>
+<div id="dvlista" height="570px">
+	<div align="center"><label value="Introduzca la dirección de correo: " /><textbox id="txtEnviar" cols="50" /><button id="btnEnviar" label="Enviar"  /></div>
+	<separator></separator>
+	<div align="center"><label id="lblmensaje" value="" visible="false" /></div>
+</div>
+</vbox>
+</div>
+</center>
+<south><div align="center" ><label value="CORPOELEC 2016" style="font-size : 14px ;font-weight : bolder;font-family : arial"/> </div></south>
+</borderlayout>
+</zk>

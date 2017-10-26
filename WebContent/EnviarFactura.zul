@@ -1,4 +1,4 @@
-<?page title="Enviar Facturas" contentType="text/html;charset=UTF-8"?>
+﻿<?page title="Enviar Facturas" contentType="text/html;charset=UTF-8"?>
 <zk>
 <borderlayout id="windEnviarFactura" apply="ve.com.corpoelec.facturadigital.controladores.EnviarFactura">
 <north>
@@ -21,7 +21,7 @@
  <separator></separator>
 <separator></separator>
 <div id="dvlista" height="570px">
-	<div align="center"><label value="Introduzca la dirección de correo: " /><textbox id="txtEnviar" cols="50" /><button id="btnEnviar" label="Enviar"  /></div>
+	<div align="center"><label value="Introduzca la dirección de correos: " /><textbox id="txtEnviar" cols="50" /><button id="btnEnviar" label="Enviar"  /></div>
 	<separator></separator>
 	<div align="center"><label id="lblmensaje" value="" visible="false" /></div>
 </div>
